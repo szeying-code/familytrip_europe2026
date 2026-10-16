@@ -1,0 +1,18 @@
+# Family Trip: 10–29 Dec 2026
+
+A day-by-day trip site. Plain HTML, no build step.
+
+- `index.html`: home page with all 20 days, grouped into 3 parts
+- `info.html`: trains, costs, things to book, favourites and tips
+- `days/day-10.html` … `days/day-29.html`: one page per day (the number is the date in December)
+- `img/`: city photos from your slides
+- `style.css`: shared design. `app.js`: saves ticks and notes in the browser
+
+## Editing a day
+Open the day's file in any text editor. Each plan item is one `<li class="r">` block, so copy one to add a row. Give each row's checkbox a unique `data-id` (r1, r2, ...), because ticks are saved by that id.
+
+## Publish with GitHub Pages
+1. Create a new repository (e.g. `family-trip-2026`).
+2. Upload everything in this folder, keeping the `days` folder.
+3. Go to Settings > Pages, set Source to "Deploy from a branch", choose `main` and `/ (root)`, then Save.
+4. After a minute the site is live at `https://<username>.github.io/family-trip-2026/`.
