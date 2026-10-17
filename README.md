@@ -9,6 +9,8 @@ A day-by-day trip site. Plain HTML, no build step.
 - `style.css`: shared design. `app.js`: saves ticks and notes in the browser
 
 ## Editing a day
+Every section of a day file has a capital-letter comment above it (for example `<!-- PLAN AND CHECKLIST -->`), so you can search for it with Ctrl+F.
+
 Open the day's file in any text editor. Each plan item is one `<li class="r">` block, so copy one to add a row. Give each row's checkbox a unique `data-id` (r1, r2, ...), because ticks are saved by that id.
 
 ## Publish with GitHub Pages
@@ -16,3 +18,6 @@ Open the day's file in any text editor. Each plan item is one `<li class="r">` b
 2. Upload everything in this folder, keeping the `days` folder.
 3. Go to Settings > Pages, set Source to "Deploy from a branch", choose `main` and `/ (root)`, then Save.
 4. After a minute the site is live at `https://<username>.github.io/family-trip-2026/`.
+
+## If the online page looks wrong (dark or unstyled)
+GitHub has an old `style.css`. Replace every file in the repo with the ones from this zip (index.html, info.html, style.css, app.js and the `days` and `img` folders), commit, wait a minute, then hard refresh (Ctrl+F5).
